@@ -25,7 +25,8 @@ protected:
 public:
     Piece(int x, int y, bool c);
     virtual bool deplacementValide(int x, int y) = 0;
-    virtual void deplacer(int x, int y) = 0;
+    void deplacer(int x, int y);
+    bool getCouleur() {return couleur_;}
 };
 
 class Roi : public Piece {
@@ -35,7 +36,6 @@ public:
     Roi(int x, int y, bool c);
     bool deplacementValide(int x, int y);
     string getToken() {if(couleur_){return "r";} else{return "R";}}
-    void deplacer(int x, int y);
 };
 
 class Dame : public Piece {
@@ -43,7 +43,6 @@ public:
     Dame(int x, int y, bool c);
     bool deplacementValide(int x, int y);
     string getToken() {if(couleur_){return "d";} else{return "D";}}
-    void deplacer(int x, int y);
 };
 
 class Tour : public Piece {
@@ -53,7 +52,6 @@ public:
     Tour(int x, int y, bool c);
     bool deplacementValide(int x, int y);
     string getToken() {if(couleur_){return "t";} else{return "T";}}
-    void deplacer(int x, int y);
 };
 
 class Cavalier : public Piece {
@@ -61,7 +59,6 @@ public:
     Cavalier(int x, int y, bool c);
     bool deplacementValide(int x, int y);
     string getToken() {if(couleur_){return "c";} else{return "C";}}
-    void deplacer(int x, int y);
 };
 
 class Fou : public Piece {
@@ -69,7 +66,6 @@ public:
     Fou(int x, int y, bool c);
     bool deplacementValide(int x, int y);
     string getToken() {if(couleur_){return "f";} else{return "F";}}
-    void deplacer(int x, int y);
 };
 
 class Pion : public Piece {
@@ -78,12 +74,11 @@ private:
 public:
     Pion(int x, int y, bool c);
     bool deplacementValide(int x, int y);
-    void deplacer(int x, int y);
     //string promotion();
     string getToken() {if(couleur_){return "p";} return "P";}
 };
 
-class Joueur {
+/*class Joueur {
 private:
     bool couleur_; //true == blanc; false == noir
     string nom_;
@@ -91,7 +86,7 @@ public:
     Joueur(string nom, bool couleur);
     bool jouer_coup(int x1, int y1, int x2, int y2);
     void saisir_coup();
-};
+};*/
 
 class Plateau{
 private:
@@ -121,6 +116,7 @@ public:
     Partie();
     void afficher();
     void changer_joueur();
+    bool getJoueur(){return joueur_actuel_;}
     void annuler_coup();
     void jouer_coup(int x1, int y1, int x2, int y2);
     bool verifier_echec();

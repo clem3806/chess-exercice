@@ -23,6 +23,13 @@ int Item::getPosY(){
 Piece::Piece(int x, int y, bool c) : Item(x, y), active_(true), couleur_(c) {
 }
 
+void Piece::deplacer(int x, int y){
+    if(this->deplacementValide(x, y)){
+        position_x_ = x;
+        position_y_ = y;
+    }
+}
+
 Roi::Roi(int x, int y, bool c) : Piece(x, y, c), hasnt_moved_(true) {
 }
 

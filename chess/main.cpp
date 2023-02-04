@@ -28,5 +28,10 @@ int main()
         getch();
         system("cls");
     }
-    cout << "Joueur x a gagne" << endl;
+    if(laPartie.getJoueur()){
+        cout << "Blanc a gagne" << endl;
+    }
+    else{
+        cout << "Noir a gagne" << endl;
+    }
 }

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1674831401 source:c:\users\formation\documents\formation c++\chess\chess.cpp
+1675506027 source:c:\users\formation\documents\formation c++\chess\chess.cpp
 	<iostream>
 	<vector>
 	<memory>
@@ -7,7 +7,7 @@
 	<numeric>
 	"chess.h"
 
-1675162166 c:\users\formation\documents\formation c++\chess\chess.h
+1675508216 c:\users\formation\documents\formation c++\chess\chess.h
 	<string>
 	<vector>
 	<memory>
@@ -19,4 +19,17 @@
 	<stdlib.h>
 	<conio.h>
 	"chess.h"
+
+1675512935 source:c:\users\formation\documents\github\chess-exercice\chess\main.cpp
+	<iostream>
+	<vector>
+	<memory>
+	<stdlib.h>
+	<conio.h>
+	"chess.h"
+
+1675508216 c:\users\formation\documents\github\chess-exercice\chess\chess.h
+	<string>
+	<vector>
+	<memory>
 
