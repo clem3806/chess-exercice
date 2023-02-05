@@ -141,9 +141,9 @@ string Plateau::verifier_case(int x, int y) {
 }
 
 void Plateau::afficher() {
-    cout << "     A  B  C  D  E  F  G  H" << endl << "    _______________________" << endl;
+    cout << "      A  B  C  D  E  F  G  H" << endl << "     _______________________" << endl;
     for(int i = 0; i < 8; i++){
-        cout << to_string(i+1) << "  | ";
+        cout << " " << to_string(i+1) << "  | ";
         for(int j = 0; j < 8; j++){
             cout << verifier_case(i, j) << "  ";
         }

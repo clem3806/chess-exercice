@@ -26,6 +26,7 @@ int main()
         char y2 = getch();
         cout << y2 << endl << "Confirmer?" << endl;
         getch();
+        laPartie.changer_joueur();
         system("cls");
     }
     if(laPartie.getJoueur()){

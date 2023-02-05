@@ -70,7 +70,7 @@ public:
 
 class Pion : public Piece {
 private:
-    bool a_deja_avance_;
+    bool can_be_en_passanted_;
 public:
     Pion(int x, int y, bool c);
     bool deplacementValide(int x, int y);

@@ -20,7 +20,7 @@
 	<conio.h>
 	"chess.h"
 
-1675512935 source:c:\users\formation\documents\github\chess-exercice\chess\main.cpp
+1675516649 source:c:\users\formation\documents\github\chess-exercice\chess\main.cpp
 	<iostream>
 	<vector>
 	<memory>
@@ -28,8 +28,16 @@
 	<conio.h>
 	"chess.h"
 
-1675508216 c:\users\formation\documents\github\chess-exercice\chess\chess.h
+1675515814 c:\users\formation\documents\github\chess-exercice\chess\chess.h
 	<string>
 	<vector>
 	<memory>
+
+1675512949 source:c:\users\formation\documents\github\chess-exercice\chess\chess.cpp
+	<iostream>
+	<vector>
+	<memory>
+	<algorithm>
+	<numeric>
+	"chess.h"
 
